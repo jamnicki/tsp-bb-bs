@@ -2,7 +2,7 @@ from pprint import pprint
 
 import numpy as np
 
-from .generator import RandomNumberGenerator
+from generator import RandomNumberGenerator
 
 
 def populate_distance_matrix(D, gen):
@@ -21,8 +21,8 @@ def main():
 
     N = 10  # liczba punktów
     D = np.full(shape=(N, N), fill_value=np.nan)  # macierz odległości
-    D = populate_distance_matrix(D, N, gen)
-    
+    D = populate_distance_matrix(D, gen)
+
     pprint(D)
 
 
