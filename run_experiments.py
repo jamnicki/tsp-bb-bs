@@ -68,7 +68,7 @@ def main():
             # exit()
 
     df = pd.DataFrame.from_dict(bb_solutions)
-    df.to_csv("tsp_solution_results.csv", index=False)
+    df.to_csv("data/tsp_solution_results.csv", index=False)
 
     print("\n", "DONE!")
 
